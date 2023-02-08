@@ -20,7 +20,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	m := mr.MakeMaster(os.Args[1:], 10)
+	m := mr.MakeMaster(os.Args[1:], 10)			// 输入最多10个文件
 	for m.Done() == false {
 		time.Sleep(time.Second)
 	}
